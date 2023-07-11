@@ -1,0 +1,11 @@
+CREATE DATABASE exchange_rate;
+
+\c exchange_rate
+
+CREATE TABLE UAH_rate
+(
+	Id SERIAL PRIMARY KEY,
+	Date DATE NOT NULL,
+	Currency CHARACTER VARYING(3) NOT NULL,
+	Rate NUMERIC(12, 7) NOT NULL
+);
